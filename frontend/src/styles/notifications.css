@@ -1,0 +1,110 @@
+/* Notifications Page */
+.notifications{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0rem auto 5rem;
+}
+.notification-container{
+  border-radius: 1.5rem;
+    margin: 2rem auto;
+    padding: 2rem;
+  box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.75);
+}
+.noti-header{
+  color: #007bff;
+  position: relative;
+  bottom: 1rem;
+}
+.notifications-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+  }
+  
+  .notifications-page h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .notifications-list {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  
+  .notification-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s;
+  }
+  
+  .notification-item:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .notification-item:last-child {
+    border-bottom: none;
+  }
+  
+  .notification-icon {
+    margin-right: 15px;
+    font-size: 20px;
+    color: #007bff;
+  }
+  
+  .notification-content {
+    flex: 1;
+  }
+  
+  .notification-message {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .notification-time {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+  }
+  .noti-li{
+    border-top: 1px solid #cccccc;
+border-bottom: 1px solid #cccccc;
+margin: 0.5rem 0;
+padding: 0.5rem 0;
+  }
+  /* Responsive */
+   @media (max-width: 768px) {
+    .notifications-list {
+      max-width: 100%;
+    }
+  
+    .notification-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .notification-icon {
+      margin-bottom: 10px;
+    }
+  }
+   
+  @media (max-width: 490px) {
+    .notification-container{
+      padding: 2rem 1rem;
+    }
+     .noti-ul{
+      padding-left: 35px;
+    }
+  }

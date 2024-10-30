@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  .home1{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .home-container {
+    text-align: center;
+  }
+  
+  .home-container h2 {
+    font-size: 24px;
+  }
+  
+  .home-container button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .home-container button:hover {
+    background-color: #c82333;
+  }
+  
+    
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .home, .profile, .create-profile {
+    display: flex;
+  }
+  
+  .content {
+    margin-left: 200px;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  form input, form select, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }

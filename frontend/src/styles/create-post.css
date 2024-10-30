@@ -1,0 +1,85 @@
+.create{
+    width: 100vw;
+    height: 100vh;
+}
+
+.create-post { 
+    position: relative;
+    width: 25rem;
+    height: 20rem;
+    transform: translateY(50%);
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    background: #fff;
+    box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.75);
+    transition: transform 1s ease, width 1s ease, height 1s ease;
+}
+
+.create-post.zoomed {
+    transform: scale(1);
+    width: 30rem;
+    height: 24rem;
+    margin: 10rem auto;
+    z-index: 6;
+}
+
+.create-post-header {
+    color: #007bff;
+    font-size: 1.25rem;
+}
+
+.post-form {
+    border-radius: 2rem;
+    background: #d7dceb;
+    font-size: 0.8rem;
+}
+
+.create-post-button {
+    width: 12rem;
+    background-color: #0095f6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 2rem;
+    font-size: 0.81rem;
+    position: relative;
+    transition: background-color 0.3s ease;
+    margin: auto;
+}
+
+@media screen and (max-width: 690px) {
+    .create-post.zoomed {
+        transform: none;
+        width: 25rem;
+        height: 20rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .create-post {
+        width: 19rem;
+        height: 15rem;
+    }
+    .create-post.zoomed {
+        transform: none;
+        width: 19rem;
+        height: 15rem;
+    }
+    .post-form {
+        width: 90%;
+        font-size: 0.5rem;
+    }
+    .create-post-button {
+        width: 6rem;
+    }
+}
+
+
+

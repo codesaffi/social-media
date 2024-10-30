@@ -1,0 +1,28 @@
+/* myfriends.css
+.my-friends-page {
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .friend-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  p {
+    margin: 0;
+    font-size: 16px;
+  }
+   */
