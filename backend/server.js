@@ -18,7 +18,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:5173",   // frontend url
+    origin: process.env.FRONTEND_URL, // "http://localhost:5173",   // frontend url
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow these HTTP methods
     allowedHeaders: ['Content-Type', 'x-auth-token'], // Allow these headers
     credentials: true
@@ -27,7 +27,7 @@ const io = socketIo(server, {
 
 // Middleware
 app.use(cors({
-  origin: "http://localhost:5173",      // frontend url
+  origin: process.env.FRONTEND_URL,      // frontend url
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow these HTTP methods
   allowedHeaders: ['Content-Type', 'x-auth-token'], // Allow these headers
   credentials: true
